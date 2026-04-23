@@ -26,7 +26,7 @@ cliente = input("Digite o nome do cliente: ").strip()
 idade = int(input("Digite a sua idade: "))
 renda_mensal = float(input("Digite o valor da renda mensal: "))
 emprestimo = float(input("Qual o valor desejado do emprestimo? "))
-parcela = int(input("Você quer fazer em quantas parcelas? (3 até 24)"))
+parcela = int(input("Você quer fazer em quantas parcelas (3 até 24)?"))
 if idade_permitida(idade) and parcela_permitida(emprestimo, renda_mensal):
     taxa = juros_parcela(parcela) * 100
     pmt = calculo_pmt(emprestimo, parcela)
